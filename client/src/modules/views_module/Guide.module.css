@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    position: sticky;
+    background: var(--bgPrincipal);
+    top: 0;
+    z-index: 999999;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.6rem 4rem 0.8rem 2.5rem;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right, var(--colorRed) 33.33%, var(--colorGold) 33.33% 66.66%, var(--bgPrincipalBtn) 66.66%) 1;
+}
+
+@media (width < 768px) {
+    header {
+        padding: 0.6rem 2rem 0.8rem 2rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

@@ -48,10 +48,11 @@ export default function Auth() {
             <div className={styles.authContainer}>
                 <div className={styles.authHeader}>
                     <Link to="/">
-                        <div className={styles.authHeaderContent}>
-                            <Icon icon="gravity-ui:arrow-left" />
-                            <p>Volver al inicio</p>
-                        </div>
+                        <RegularBtn
+                            btnContext="btnHeaderBack"
+                            btnIcon="arrow-left"
+                            btnText="Volver al inicio"
+                        />
                     </Link>
                     <span className="specialName"> IndeAccess</span>
                 </div>
