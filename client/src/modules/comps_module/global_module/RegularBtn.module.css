@@ -1,0 +1,114 @@
+.RegularBtnContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 9999999rem;
+    corner-shape: squircle;
+    cursor: pointer;
+    width: fit-content;
+    font-family: "DM Sans", sans-serif;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* .btnPrincipal {
+    padding: 14px 20px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.btnBgPrincipal.btnPrincipal:hover {
+    transform: scale(1.05);
+    box-shadow: var(--bsPrincipal);
+}
+
+.btnSecondary {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.btnPrincipal,
+.btnSecondary {
+    font-weight: 500;
+}
+
+.btnBgPrincipal {
+    background-color: var(--bgPrincipalBtn);
+    color: var(--textColorTertiary);
+}
+
+.btnBgPrincipal:hover {
+    background-color: var(--bgPrincipalBtnHover);
+}
+
+.btnBgSecondary {
+    background-color: var(--bgSecondaryBtn);
+    border: 1px solid var(--brSecondaryBtn);
+    color: var(--textColorPrincipal);
+}
+
+.btnBgSecondary:hover {
+    background-color: var(--bgSecondaryBtnHover);
+} */
+
+
+.btnHomePrincipal, .btnHomeSecondary {
+    padding: 14px 20px;
+    font-size: 17px;
+}
+
+.btnHomePrincipal {
+    font-weight: 700;
+}
+
+.btnHomePrincipal {
+    background-color: var(--bgPrincipalBtn);
+    color: var(--textColorTertiary);
+}
+
+.btnHomePrincipal:hover {
+    transform: scale(1.05);
+    box-shadow: var(--bsPrincipal);
+}
+
+.btnHomeSecondary, .btnHeaderSecondary {
+    background-color: var(--bgSecondaryBtn);
+    border: 1px solid var(--brSecondaryBtn);
+    color: var(--textColorPrincipal);
+}
+
+.btnHomePrincipal:hover, .btnHeaderPrincipal:hover {
+    background-color: var(--bgPrincipalBtnHover);
+}
+
+.btnHomeSecondary:hover, .btnHeaderSecondary:hover {
+    background-color: var(--bgSecondaryBtnHover);
+}
+
+.btnHeaderPrincipal {
+    background-color: var(--bgPrincipalBtn);
+    color: var(--textColorTertiary);
+}
+
+.btnHeaderPrincipal,
+.btnHeaderSecondary {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+/*
+    AUTH ACTION BUTTON
+*/
+
+.btnAuthAction {
+    background-color: var(--bgPrincipalBtn);
+    color: var(--textColorTertiary);
+    width: 100%;
+    padding: 0.7rem;
+    justify-content: center;
+}
+
+.btnAuthAction:hover {
+    background-color: var(--bgPrincipalBtnHover);
+}

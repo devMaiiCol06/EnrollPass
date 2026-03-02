@@ -1,0 +1,11 @@
+.MiniTagContainer {
+    border-radius: 9999rem;
+    padding: 8px 18px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--bgPrincipalBtnHover);
+    background-color: #dbfce7;
+    width: fit-content;
+    border: 1px #b9f8cf solid;
+    text-align: center;
+}

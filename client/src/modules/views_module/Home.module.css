@@ -1,0 +1,102 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.homeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.6rem 4rem 0.8rem 4rem;
+    border-bottom: 1px solid var(--brSecondaryBtn);
+}
+
+@media (width < 768px) {
+    .homeHeader {
+        padding: 0.6rem 2rem 0.8rem 2rem;
+        flex-direction: column;
+    }
+
+    .homeHeaderContent {
+        flex-direction: column;
+    }
+
+    .homeHeaderTexts {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .homeContentBtns {
+        flex-direction: column;
+    }
+}
+
+.homeHeaderContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.homeHeaderBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.homeHeaderImg {
+    width: 90px;
+}
+
+.homeHeaderTitle {
+    color: var(--textColorPrincipal);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.homeHeaderSubTitle {
+    color: var(--textColorSecondary);
+    font-size: 14px;
+}
+
+.homeContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.homeContentTitle {
+    background-image: var(--gradientPrimary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5.7rem;
+    padding: 0rem 2rem;
+    text-align: center;
+    font-family: var(--font-custom) !important;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.homeContentSubTitle {
+    color: var(--textColorSecondary);
+    font-size: 19px;
+    width: 57%;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.homeContentBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+}

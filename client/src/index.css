@@ -1,46 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/ulagadi-sans');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+    font-family: "DhPafigo";
+    src: url("./assets/fonts/Dh_Pafigo_Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
-    --bgPrimary: #F1EDFF;
-    --bgPrimaryHover: #f1efff;
-    --bgForm: #FFFFFF;
-    --gradientPrimary: linear-gradient(135deg,
-            rgb(74, 222, 128) 0%,
-            rgb(247, 210, 74) 50%,
-            rgb(248, 117, 93) 100%);
-    --gradientGreen: linear-gradient(135deg,
-            rgb(74, 222, 128),
-            rgb(117, 230, 158));
-    --gradientGold: linear-gradient(135deg,
-            rgb(247, 210, 74),
-            rgb(249, 222, 123));
-    --textColorPrimary: #23282e;
-    --textColorSecondary: #6b7280;
+    --font-custom: "DhPafigo", sans-serif;
+    --bgPrincipal: #ffffff;
+    --bgPrincipalBtn: #00c950;
+    --bgPrincipalBtnHover: #00a63e;
+    --bgSecondaryBtn: #f8f8f8;
+    --bgSecondaryBtnHover: #f1f1f1;
+    --gradientPrimary: linear-gradient(
+        135deg,
+        rgba(0, 166, 62) 0%,
+        rgba(238, 177, 0) 50%,
+        rgba(0, 166, 62) 100%
+    );
+    --gradientGreen: linear-gradient(
+        135deg,
+        rgb(74, 222, 128),
+        rgb(117, 230, 158)
+    );
+    --gradientGold: linear-gradient(
+        135deg,
+        rgb(247, 210, 74),
+        rgb(249, 222, 123)
+    );
+    --textColorPrincipal: #18181f;
+    --textColorSecondary: #4a5565c5;
     --textColorTertiary: #fff;
-    --colorGreen: #4ade80;
-    --colorGreenHover: #26CF64;
+    --textColorQuaternary: #a0a9b5;
     --colorGold: #f7d24a;
-    --colorGoldHover: #F6C71F;
-    --borderInput: #d1d5dd;
-    --bgBttTheme: #F3F4F6;
-    --bsPrimary: 0px 10px 10px 2px rgba(128, 128, 128, 0.1);
+    --colorGoldHover: #f6c71f;
+    --brSecondaryBtn: #e5e5e5;
+    --brInput: #d1d5ddbf;
+    --brInputHover: #a9d4aa;
+    --bsPrincipal: 0px 10px 10px 2px rgba(128, 128, 128, 0.1);
     --bsSecondary: 0px 10px 10px 2px rgba(128, 128, 128, 0.2);
     --bgHr: #d4d5d6;
 }
 
-body.darkMode {
-    --bgPrimary: #14161a;
+/* body.darkMode {
+    --bgPrincipal: #14161a;
     --bgSecondary: #1b1d23;
     --bgForm: #181B20;
-    --textColorPrimary: #f3f4f6;
+    --textColorPrincipal: #f3f4f6;
     --textColorSecondary: #9096a2;
     --borderInput: #282c34;
     --bgBttTheme: #21252B;
-    --bsPrimary: 0px 10px 10px 2px rgba(0, 0, 0, 0.158);
+    --bsPrincipal: 0px 10px 10px 2px rgba(0, 0, 0, 0.158);
     --bsSecondary: 0px 10px 10px 2px rgba(0, 0, 0, 0.274);
     --bgHr: #282c34;
-}
+} */
 
 * {
     margin: 0;
@@ -55,11 +70,12 @@ input {
     text-decoration: none;
     border: none;
     outline: none;
+    backdrop-filter: blur(10px) !important;
 }
 
 body {
     background: var(--bgPrimary);
-    font-family: 'Ulagadi Sans', sans-serif;
+    font-family: "DM Sans", sans-serif !important;
 }
 
 .specialName {
@@ -68,4 +84,5 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 4px 12px rgba(6, 8, 9, 0.1));
+    font-family: var(--font-custom);
 }
