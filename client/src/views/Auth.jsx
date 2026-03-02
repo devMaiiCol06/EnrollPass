@@ -3,7 +3,7 @@ import "../index.css";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import FeatureItem from "../components/home_comps/FeatureItem";
+import FeatureItem from "../components/auth_comps/FeatureItem";
 import AuthLoginForm from "../components/auth_comps/authLoginForm";
 import AuthRegisterForm from "../components/auth_comps/authRegisterForm";
 import RegularBtn from "../components/global_comps/RegularBtn";

@@ -1,6 +1,6 @@
 // IMPORTACIONES
 
-import styles from "../../modules/comps_module/home_module/FeatureItem.module.css";
+import styles from "../../modules/comps_module/auth_module/FeatureItem.module.css";
 
 // COMPONENTE
 
