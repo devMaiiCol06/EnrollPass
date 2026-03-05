@@ -1,0 +1,300 @@
+header {
+    display: flex;
+    position: sticky;
+    background: var(--bgPrincipal);
+    top: 0;
+    z-index: 999999;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.6rem 4rem 0.8rem 2rem;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(
+            to right,
+            var(--colorRed) 33.33%,
+            var(--colorGold) 33.33% 66.66%,
+            var(--bgPrincipalBtn) 66.66%
+        )
+        1;
+}
+
+.headerContentLeft {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.guideBody,
+.guideHero,
+.guideContent,
+.guideTips,
+.tipIcon,
+.warnIcon,
+.miniTagGuide,
+.warnList,
+.warnContent,
+.warnListItem,
+.guideCTA,
+.startNowIcon,
+.startNowContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.tipCard:hover,
+.startNowContainer:hover,
+.warnContainer:hover {
+    box-shadow: var(--bsPrincipal);
+}
+
+.guideBody {
+    gap: 3rem;
+    position: relative;
+    width: 100%;
+}
+
+section {
+    padding: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+
+.guideHero {
+    padding: 5rem 0 3rem !important;
+    background: linear-gradient(
+        to bottom right,
+        #f0fdf4,
+        rgba(254, 252, 232, 0.4),
+        rgba(254, 242, 242, 0.3)
+    );
+    gap: 2rem;
+}
+
+.guideContent {
+    margin: 0 auto !important;
+    width: 56% !important;
+}
+
+.tipsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    width: 65%;
+}
+
+.tipCard {
+    padding: 2rem 1.5rem;
+    box-shadow: var(--bsPrincipal);
+    border: 1px solid var(--brSecondaryBtn);
+    border-radius: 2rem;
+    corner-shape: squircle;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: var(--bsTertiary);
+}
+
+.tipIcon {
+    font-size: 26px;
+    padding: 0.5rem;
+    corner-shape: squircle;
+    box-shadow: var(--bsTertiary);
+    border-radius: 2rem;
+}
+
+.tipTitle {
+    font-size: 18px;
+    color: var(--textColorPrimary);
+    line-height: 2rem;
+}
+
+.tipDesc {
+    font-size: 14px;
+    color: var(--textColorSecondary);
+    line-height: 1.3rem;
+}
+
+.guideWarn {
+    width: 56%;
+    margin: 0 auto !important;
+}
+
+.warnContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: var(--bgBadgeGold);
+    gap: 1rem;
+    border: 1px solid var(--brBadgeGold);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    corner-shape: squircle;
+    box-shadow: var(--bsTertiary);
+    width: 100%;
+}
+
+.warnIcon {
+    color: var(--textColorWarnRegular);
+    background: var(--bgBadgeWarn);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    corner-shape: squircle;
+    box-shadow: var(--bsTertiary);
+    width: fit-content;
+    font-size: 26px;
+}
+
+.warnContent {
+    align-items: flex-start !important;
+    gap: 1rem;
+}
+
+.warnList {
+    list-style: none;
+    text-decoration: none;
+    align-items: flex-start !important;
+    gap: 0.5rem;
+}
+
+.warnListItem {
+    flex-direction: row !important;
+    color: var(--textColorWarnRegular);
+    gap: 0.5rem;
+    font-size: 14px;
+}
+
+.warnTitle {
+    color: var(--textColorWarnTitle);
+}
+
+.guideCTA {
+    width: 60%;
+}
+
+.startNowContainer {
+    margin: 0 auto !important;
+    gap: 1rem;
+    background: var(--bgPrincipalBtn);
+    color: var(--textColorTertiary);
+    box-shadow: var(--bsSecondary);
+    padding: 2rem 1.5rem;
+    margin-bottom: 3rem !important;
+    text-align: center;
+    border-radius: 2rem;
+    corner-shape: squircle;
+}
+
+.startNowIcon {
+    color: var(--bgPrincipalBtn);
+    background: var(--bgBadgeGreen);
+    border: 1px solid var(--brBadgeGreen);
+    box-shadow: var(--bsTertiary);
+    font-size: 36px;
+    padding: 1rem;
+    corner-shape: squircle;
+    border-radius: 2rem;
+    width: fit-content;
+}
+
+@media (width > 1440px) {
+    .guideContent,
+    .guideWarn,
+    .guideCTA {
+        margin: 0 !important;
+        width: 50% !important;
+    }
+}
+
+@media (width < 1024px) {
+    .guideContent,
+    .guideWarn,
+    .guideCTA {
+        margin: 0 !important;
+        width: 75% !important;
+    }
+
+    .tipsGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        width: 75%;
+    }
+}
+
+@media (width < 768px) {
+    header {
+        padding: 0.6rem 2rem 0.8rem 2rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .guideBody {
+        gap: 2rem;
+    }
+
+    .guideHero {
+        padding: 3rem 0 2rem !important;
+    }
+
+    .guideContent,
+    .guideWarn,
+    .guideCTA {
+        width: 90% !important;
+        margin: 0 !important;
+    }
+
+    .tipsGrid {
+        width: 90%;
+    }
+}
+
+.miniTagGuide {
+    width: fit-content;
+    color: var(--bgPrincipalBtnHover);
+    border: 1px solid var(--brSecondaryBtn);
+    background-color: var(--textColorTertiary);
+    box-shadow: var(--bsTertiary);
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    border-radius: 999rem;
+    font-weight: 500;
+}
+
+.highlightText {
+    background: var(--gradientPrimary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 4px 12px rgba(6, 8, 9, 0.1));
+    font-family: var(--font-custom);
+    letter-spacing: 2px;
+}
+
+.blobGreen {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    width: 18rem;
+    height: 18rem;
+    background-color: rgba(104, 251, 156, 0.3);
+    border-radius: 9999px;
+    filter: blur(64px);
+}
+
+.blobYellow {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.5rem;
+    width: 14rem;
+    height: 14rem;
+    background-color: rgba(255, 236, 88, 0.3);
+    border-radius: 9999px;
+    filter: blur(64px);
+}

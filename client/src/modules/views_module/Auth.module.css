@@ -14,24 +14,6 @@
     font-size: 1.3rem;
 }
 
-.authHeaderContent {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--textColorPrincipal);
-    font-size: 14px !important;
-    font-weight: 500;
-    border-radius: 9999999rem;
-    corner-shape: squircle;
-    width: fit-content;
-    padding: 0.5rem 1rem !important;
-    transition: all 0.3s ease;
-}
-
-.authHeaderContent:hover {
-    background: var(--bgSecondaryBtn);
-}
-
 .authContent {
     display: flex;
     flex-direction: column;

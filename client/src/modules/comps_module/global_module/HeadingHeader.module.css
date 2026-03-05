@@ -1,13 +1,24 @@
 .headingHeaderContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.headingLogo {
+    width: 90px;
+}
+
+.headingContent {
+    display: flex;
+    justify-content: center;
     align-items: left;
     flex-direction: column;
-    width: 90%;
 }
 
 .headingTitle {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 30px;
     color: var(--textColorPrincipal);
