@@ -47,7 +47,7 @@ export default function Auth() {
         <>
             <div className={styles.authContainer}>
                 <div className={styles.authHeader}>
-                    <Link to="/">
+                    <Link to={-1}>
                         <RegularBtn
                             btnContext="btnHeaderBack"
                             btnIcon="arrow-left"

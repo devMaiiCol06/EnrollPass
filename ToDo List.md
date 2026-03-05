@@ -4,7 +4,8 @@
 
 
 
-* **Seguir con:** 
+**Seguir con:**
+
 * Cambiar la redireccion del botón de Auth de "/" a "{-1}", es decir a la ultima ruta visitada
 * Agregar borde con colores principales en el header del home
 * Refactorizar el componente HeadindHeader, para que soporte mediante contextos el heading con logo "IndeAccess" en el home
