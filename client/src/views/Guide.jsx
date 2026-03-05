@@ -1,3 +1,5 @@
+// IMPORTACIONES
+
 import styles from "../modules/views_module/Guide.module.css";
 import HeadingHeader from "../components/global_comps/HeadingHeader";
 import RegularBtn from "../components/global_comps/RegularBtn";
@@ -6,7 +8,10 @@ import StepCard from "../components/guide_comps/StepCard";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
+// COMPONENTE
+
 const Guide = () => {
+    // Arreglo con la informacion de todos los pasos (estilos y contenido)
     const steps = [
         {
             icon: "gravity-ui:person-plus",
@@ -117,7 +122,7 @@ const Guide = () => {
             ],
         },
     ];
-
+    // Arreglo con la informacion de todos los tips (estilos y contenido)
     const tips = [
         {
             icon: "gravity-ui:camera",
