@@ -14,3 +14,6 @@
 * ✅ Cambiar logo
 * ✅ Crear componente que contenga los circulos amarillo y verde desvanecidos para ser reutilizado en cualquier vista
 * ✅ Terminar la vista de la ruta /Guide
+* ✅ Arreglar responsividad del header global, la vista principal (home) y vista de autenticación (auth)
+* Terminar footer de la vista principal (home).
+* Empezar con la vista de dashboard de acudiente (con datos de ejemplo en variables de arreglos)

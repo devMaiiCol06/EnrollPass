@@ -1,8 +1,8 @@
 .stepCardContainer {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 2rem;
+    padding: 2rem;
     border: 1px solid #e5e7eb;
     border-radius: 1rem;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -24,6 +24,7 @@
     align-items: start;
     gap: 1rem;
     text-align: center;
+    padding: 0;
 }
 
 .stepIcon {
@@ -39,14 +40,35 @@
 .stepHeading {
     color: var(--textColorSecondary);
     font-size: 1.7rem;
+    width: 100%;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    padding: 0;
     color: var(--textColorPrincipal);
+}
+
+.stepCardBody {
+    padding: 0;
 }
 
 .stepDescription {
     font-size: 17px;
     color: var(--textColorSecondary);
     line-height: 1.7rem;
+    padding: 0;
     text-align: center;
+    width: 100%;
+}
+
+@media (width < 768px) {
+    .stepCardContainer {
+        padding: 1rem;
+    }
+
+    .stepHeading {
+        font-size: 1.5rem;
+    }
+
+    .stepDescription {
+        font-size: 16px;
+    }
 }

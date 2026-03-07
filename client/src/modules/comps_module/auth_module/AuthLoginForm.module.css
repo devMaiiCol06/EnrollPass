@@ -1,14 +1,18 @@
 .authLoginFormContainer {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.inputBoxContainer {
+    display: flex;
+    flex-direction: column;
     justify-content: left;
     align-items: left;
-    text-align: left;
-    width: 100%;
+    gap: 1rem;
 }
 
 .authFormBtnContainer {
-    margin: 1rem auto 0;
     width: 100%;
 }

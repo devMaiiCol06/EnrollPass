@@ -38,3 +38,22 @@
     filter: blur(64px);
     z-index: -10;
 }
+
+.heroContent {
+    width: 100%;
+    height: 100%;
+}
+
+@media (width < 768px) {
+    .BgHeroGlobalContainer {
+        background: var(--gradientBgHero) !important;
+    }
+
+    .blobGreen {
+        display: none;
+    }
+
+    .blobYellow {
+        display: none;
+    }
+}

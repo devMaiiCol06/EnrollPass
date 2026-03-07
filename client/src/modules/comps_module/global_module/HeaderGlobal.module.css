@@ -1,7 +1,8 @@
-header {
+.headerContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
     background: var(--bgPrincipal);
     padding: 0.8rem 2rem;
     border-bottom: 4px solid;
@@ -16,55 +17,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 999999;
-}
-
-.headerLeftPart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
     gap: 1rem;
-    padding: 0;
-}
-
-.headerRightPart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 1rem;
-    width: fit-content;
-}
-
-.headingHeaderContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    gap: 1rem;
-}
-
-.headingLogo {
-    width: 90px;
-}
-
-.headingContent {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-}
-
-.headingTitle {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px;
-    color: var(--textColorPrincipal);
-}
-
-.headingDescription {
-    font-size: 14px;
-    color: var(--textColorSecondary);
 }
 
 .backBtn {
@@ -87,4 +40,75 @@ header {
 
 .backBtn:hover {
     background: var(--bgSecondaryBtnHover);
+}
+
+.headingHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    flex: 1;
+    padding: 0;
+    gap: 1rem;
+}
+
+.headingContent {
+    align-items: left;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.headingLogo {
+    width: 70px;
+}
+
+.headingTitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--textColorPrincipal);
+}
+
+.headingDescription {
+    font-size: 14px;
+    color: var(--textColorSecondary);
+}
+
+.headerRightPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    padding: 0;
+}
+
+@media (width < 680px) {
+    .headerContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .headingHeaderContainer {
+        flex: none;
+        width: 100%;
+        order: 1;
+        justify-content: center;
+    }
+
+    .headingContent {
+        flex: none;
+        align-items: center;
+    }
+
+    .backBtnLink {
+        order: 2;
+    }
+
+    .headerRightPart {
+        order: 3;
+    }
 }

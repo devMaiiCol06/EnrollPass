@@ -15,7 +15,6 @@
     line-height: 4rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
-    padding: 0 2.5rem;
 }
 
 .headingDescription {
@@ -28,13 +27,14 @@
 
 @media (width < 768px) {
     .headingText {
-        font-size: 2.5rem !important;
-        line-height: 3rem;
+        font-size: 2.2rem !important;
+        line-height: 2.5rem;
+        width: 100%;
     }
 
     .headingDescription {
         font-size: 16px !important;
         margin-bottom: 2.5rem !important;
-        width: 90% !important;
+        width: 100% !important;
     }
 }

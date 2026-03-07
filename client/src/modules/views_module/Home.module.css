@@ -6,26 +6,6 @@
     width: 100%;
 }
 
-@media (width > 1366px) {
-    .homeSection1 {
-        height: 100%;
-        margin-bottom: 3rem;
-    }
-}
-
-@media (width < 768px) {
-    .homeSection1 {
-        height: 100%;
-        margin-bottom: 3rem;
-    }
-}
-
-@media (width < 768px) {
-    .homeContentBtns {
-        flex-direction: column;
-    }
-}
-
 .homeHeaderBtns {
     display: flex;
     justify-content: center;
@@ -77,6 +57,7 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    max-width: 1432px;
     padding: 2rem;
     margin: 0 auto 5rem;
 }
@@ -86,7 +67,38 @@
     padding: 0 6rem;
     gap: 2rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    margin: 0 auto;
+}
+
+@media (width > 1366px) {
+    .homeSection1 {
+        height: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (width < 768px) {
+    .homeContentTitle {
+        font-size: 4rem;
+    }
+
+    .homeContentSubTitle {
+        width: auto;
+        margin: 0 2rem;
+        font-size: 18px;
+    }
+
+    .homeSection1 {
+        height: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .homeContentBtns {
+        flex-direction: column;
+    }
+
+    .stepFastTutoContainer {
+        padding: 0;
+    }
 }
 
 @media (width > 768px) {

@@ -104,6 +104,7 @@
 .detailText {
     font-size: 14px;
     color: var(--textColorSecondary);
+    text-align: left;
 }
 
 @media (width < 768px) {

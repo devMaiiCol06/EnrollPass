@@ -195,13 +195,6 @@ section {
 }
 
 @media (width < 768px) {
-    header {
-        padding: 0.6rem 2rem 0.8rem 2rem;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
     .guideBody {
         gap: 2rem;
     }

@@ -210,7 +210,7 @@ const Guide = () => {
                     />
                     <div className={styles.tipsGrid}>
                         {tips.map((tip, index) => (
-                            <div className={styles.tipCard}>
+                            <div key={index} className={styles.tipCard}>
                                 <div
                                     className={styles.tipIcon}
                                     style={{
@@ -274,7 +274,7 @@ const Guide = () => {
                             Solo toma unos minutos completar el proceso. Es
                             completamente gratuito y seguro
                         </p>
-                        <Link href="/auth">
+                        <Link to="/auth">
                             <RegularBtn
                                 btnText="Comenzar Inscripcion"
                                 btnIcon="arrow-right"

@@ -22,32 +22,28 @@ const HeaderGlobal = ({
     const location = useLocation();
 
     return (
-        <header>
-            <section className={styles.headerLeftPart}>
-                {location.pathname !== "/" && (
-                    <Link to={-1}>
-                        <div className={styles.backBtn}>
-                            <Icon icon="gravity-ui:arrow-left" />
-                            <span>Volver</span>
-                        </div>
-                    </Link>
+        <header className={styles.headerContainer}>
+            {location.pathname !== "/" && (
+                <Link to={-1} className={styles.backBtnLink}>
+                    <section className={styles.backBtn}>
+                        <Icon icon="gravity-ui:arrow-left" />
+                        <span>Volver</span>
+                    </section>
+                </Link>
+            )}
+            <section className={styles.headingHeaderContainer}>
+                {headingLogo && (
+                    <img
+                        className={styles.headingLogo}
+                        src="../../IndeAccess_Logotipo.png"
+                        alt="Logo IndeAccess"
+                    />
                 )}
-                <div className={styles.headingHeaderContainer}>
-                    {headingLogo && (
-                        <img
-                            className={styles.headingLogo}
-                            src="../../IndeAccess_Logotipo.png"
-                            alt="Logo IndeAccess"
-                        />
-                    )}
-                    <div className={styles.headingContent}>
-                        <span className={styles.headingTitle}>
-                            {headingTitle}
-                        </span>
-                        <p className={styles.headingDescription}>
-                            {headingDescription}
-                        </p>
-                    </div>
+                <div className={styles.headingContent}>
+                    <span className={styles.headingTitle}>{headingTitle}</span>
+                    <p className={styles.headingDescription}>
+                        {headingDescription}
+                    </p>
                 </div>
             </section>
             <section className={styles.headerRightPart}>
