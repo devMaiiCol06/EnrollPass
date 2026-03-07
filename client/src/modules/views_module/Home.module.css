@@ -6,80 +6,11 @@
     width: 100%;
 }
 
-@media (width > 1366px) {
-    .homeSection1 {
-        height: 100%;
-        margin-bottom: 3rem;
-    }
-}
-
-@media (width < 768px) {
-    .homeSection1 {
-        height: 100%;
-        margin-bottom: 3rem;
-    }
-}
-
-.homeHeader {
-    display: flex;
-    position: sticky;
-    background: var(--bgPrincipal);
-    top: 0;
-    z-index: 999999;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0.6rem 4rem 0.8rem 4rem;
-    border-bottom: 1px solid var(--brSecondaryBtn);
-}
-
-@media (width < 768px) {
-    .homeHeader {
-        padding: 0.6rem 2rem 0.8rem 2rem;
-        flex-direction: column;
-    }
-
-    .homeHeaderContent {
-        flex-direction: column;
-    }
-
-    .homeHeaderTexts {
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-    .homeContentBtns {
-        flex-direction: column;
-    }
-}
-
-.homeHeaderContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
 .homeHeaderBtns {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-
-.homeHeaderImg {
-    width: 90px;
-}
-
-.homeHeaderTitle {
-    color: var(--textColorPrincipal);
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.homeHeaderSubTitle {
-    color: var(--textColorSecondary);
-    font-size: 14px;
 }
 
 .homeContent {
@@ -88,6 +19,7 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 2rem 0;
+    position: relative;
 }
 
 .homeContentTitle {
@@ -125,6 +57,7 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    max-width: 1432px;
     padding: 2rem;
     margin: 0 auto 5rem;
 }
@@ -134,7 +67,38 @@
     padding: 0 6rem;
     gap: 2rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    margin: 0 auto;
+}
+
+@media (width > 1366px) {
+    .homeSection1 {
+        height: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (width < 768px) {
+    .homeContentTitle {
+        font-size: 4rem;
+    }
+
+    .homeContentSubTitle {
+        width: auto;
+        margin: 0 2rem;
+        font-size: 18px;
+    }
+
+    .homeSection1 {
+        height: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .homeContentBtns {
+        flex-direction: column;
+    }
+
+    .stepFastTutoContainer {
+        padding: 0;
+    }
 }
 
 @media (width > 768px) {

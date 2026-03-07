@@ -1,7 +1,8 @@
 // IMPORTACIONES
 
 import styles from "../modules/views_module/Guide.module.css";
-import HeadingHeader from "../components/global_comps/HeadingHeader";
+import HeaderGlobal from "../components/global_comps/HeaderGlobal";
+import BgHeroGlobal from "../components/global_comps/BgHeroGlobal";
 import RegularBtn from "../components/global_comps/RegularBtn";
 import HeadingRegular from "../components/global_comps/HeadingRegular";
 import StepCard from "../components/guide_comps/StepCard";
@@ -153,52 +154,45 @@ const Guide = () => {
             desc: "Tu informacion esta protegida y solo sera usada para el proceso de inscripcion.",
         },
     ];
+    // Variable que contiene el contenido del lado derecho del componente "HeaderGlobal"
+    const headerRightContent = (
+        <Link to="/auth">
+            <RegularBtn
+                btnContext="btnHeaderPrincipal"
+                btnText="Inscribe Ahora"
+                btnIcon="arrow-right"
+            />
+        </Link>
+    );
+    // Variable con el contenido del hero para pasar como parametro al componente "BgHeroGlobal"
+    const heroBgContent = (
+        <section className={styles.guideHero}>
+            <span className={styles.miniTagGuide}>Proceso 100% Gratuito</span>
+            <HeadingRegular
+                headingText={
+                    <>
+                        Como inscribir a{" "}
+                        <span className={styles.highlightText}>
+                            tu estudiante
+                        </span>
+                    </>
+                }
+                headingTextSize="4.3rem"
+                headingDescription="Sigue estos 4 sencillos pasos para completar la inscripcion de manera exitosa. Sin costos, sin complicaciones"
+            />
+        </section>
+    );
 
     return (
         <div className={styles.GuideContainer}>
-            <header>
-                <div className={styles.headerContentLeft}>
-                    <Link to={-1}>
-                        <RegularBtn
-                            btnContext="btnHeaderBack"
-                            btnIcon="arrow-left"
-                            btnText="Volver"
-                        />
-                    </Link>
-                    <HeadingHeader
-                        headingLogo="true"
-                        headingTitle="Guía de Inscripción"
-                        headingDescription="Proceso paso a paso"
-                    />
-                </div>
-                <Link to="/auth">
-                    <RegularBtn
-                        btnContext="btnHeaderPrincipal"
-                        btnText="Inscribe Ahora"
-                        btnIcon="arrow-right"
-                    />
-                </Link>
-            </header>
+            <HeaderGlobal
+                headingLogo="true"
+                headingTitle="Guía de Inscripción"
+                headingDescription="Proceso paso a paso"
+                headerRightContent={headerRightContent}
+            />
             <main className={styles.guideBody}>
-                <section className={styles.guideHero}>
-                    <span className={styles.miniTagGuide}>
-                        Proceso 100% Gratuito
-                    </span>
-                    <HeadingRegular
-                        headingText={
-                            <>
-                                Como inscribir a{" "}
-                                <span className={styles.highlightText}>
-                                    tu estudiante
-                                </span>
-                            </>
-                        }
-                        headingTextSize="4.3rem"
-                        headingDescription="Sigue estos 4 sencillos pasos para completar la inscripcion de manera exitosa. Sin costos, sin complicaciones"
-                    />
-                    <div className={styles.blobGreen} />
-                    <div className={styles.blobYellow} />
-                </section>
+                <BgHeroGlobal heroContent={heroBgContent} />
                 <section className={styles.guideContent}>
                     {steps.map((step, index) => (
                         <StepCard
@@ -216,7 +210,7 @@ const Guide = () => {
                     />
                     <div className={styles.tipsGrid}>
                         {tips.map((tip, index) => (
-                            <div className={styles.tipCard}>
+                            <div key={index} className={styles.tipCard}>
                                 <div
                                     className={styles.tipIcon}
                                     style={{
@@ -280,7 +274,7 @@ const Guide = () => {
                             Solo toma unos minutos completar el proceso. Es
                             completamente gratuito y seguro
                         </p>
-                        <Link href="/auth">
+                        <Link to="/auth">
                             <RegularBtn
                                 btnText="Comenzar Inscripcion"
                                 btnIcon="arrow-right"
