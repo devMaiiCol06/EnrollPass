@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
+    width: 100%;
     border: 1px solid #e5e7eb;
     border-radius: 1rem;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -15,6 +16,7 @@
         0 10px 10px -5px rgba(0, 0, 0, 0.04);
     transform: translateY(-0.015rem);
     transition: all ease 0.5s;
+    border-color: var(--hoverColor);
 }
 
 .stepCardHeader {
@@ -70,5 +72,11 @@
 
     .stepDescription {
         font-size: 16px;
+    }
+
+    .stepIcon {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 20px !important;
     }
 }

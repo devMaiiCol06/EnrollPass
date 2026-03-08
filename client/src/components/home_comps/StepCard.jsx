@@ -25,7 +25,10 @@ const StepCard = ({
         stepIconSize = "42px";
     }
     return (
-        <div className={styles.stepCardContainer}>
+        <div
+            className={styles.stepCardContainer}
+            style={{ "--hoverColor": stepIconColor }}
+        >
             <section className={styles.stepCardHeader}>
                 <span
                     className={styles.stepIcon}
