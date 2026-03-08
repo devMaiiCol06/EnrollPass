@@ -1,4 +1,4 @@
-.homeSection1 {
+.homeHero {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -13,7 +13,7 @@
     gap: 20px;
 }
 
-.homeContent {
+.heroContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.homeContentTitle {
+.heroTitle {
     background-image: var(--gradientPrimary);
     background-clip: text;
     -webkit-background-clip: text;
@@ -35,7 +35,7 @@
     margin: 1.5rem 0;
 }
 
-.homeContentSubTitle {
+.heroSubtitle {
     color: var(--textColorSecondary);
     font-size: 19px;
     width: 57%;
@@ -44,7 +44,7 @@
     margin: 0;
 }
 
-.homeContentBtns {
+.heroBtns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@
     margin: 2rem 0 0;
 }
 
-.homeSection2 {
+.homeContent {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -62,7 +62,7 @@
     margin: 0 auto 5rem;
 }
 
-.stepFastTutoContainer {
+.stepsContainer {
     display: grid;
     padding: 0 6rem;
     gap: 2rem;
@@ -70,39 +70,39 @@
 }
 
 @media (width > 1366px) {
-    .homeSection1 {
+    .homeHero {
         height: 100%;
         margin-bottom: 3rem;
     }
 }
 
 @media (width < 768px) {
-    .homeContentTitle {
+    .heroTitle {
         font-size: 4rem;
     }
 
-    .homeContentSubTitle {
+    .heroSubtitle {
         width: auto;
         margin: 0 2rem;
         font-size: 18px;
     }
 
-    .homeSection1 {
+    .homeHero {
         height: 100%;
         margin-bottom: 3rem;
     }
 
-    .homeContentBtns {
+    .heroBtns {
         flex-direction: column;
     }
 
-    .stepFastTutoContainer {
+    .stepsContainer {
         padding: 0;
     }
 }
 
 @media (width > 768px) {
-    .stepFastTutoContainer {
+    .stepsContainer {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
