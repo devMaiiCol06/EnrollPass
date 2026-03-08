@@ -1,9 +1,16 @@
-.homeSection1 {
+.main {
     display: flex;
     flex-direction: column;
-    position: relative;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 100%;
+    gap: 4rem;
+}
+
+.main * {
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .homeHeaderBtns {
@@ -13,7 +20,16 @@
     gap: 20px;
 }
 
-.homeContent {
+.homeHero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.heroContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,20 +38,19 @@
     position: relative;
 }
 
-.homeContentTitle {
+.heroTitle {
     background-image: var(--gradientPrimary);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 5.7rem;
-    padding: 0rem 2rem;
     text-align: center;
     font-family: var(--font-custom) !important;
     letter-spacing: 1px;
     margin: 1.5rem 0;
 }
 
-.homeContentSubTitle {
+.heroSubtitle {
     color: var(--textColorSecondary);
     font-size: 19px;
     width: 57%;
@@ -44,7 +59,7 @@
     margin: 0;
 }
 
-.homeContentBtns {
+.heroBtns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,57 +67,282 @@
     margin: 2rem 0 0;
 }
 
-.homeSection2 {
+.homeContent {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 100%;
+    min-width: 100%;
     max-width: 1432px;
-    padding: 2rem;
-    margin: 0 auto 5rem;
+    gap: 4rem;
 }
 
-.stepFastTutoContainer {
+.homeSteps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.stepsContent {
     display: grid;
     padding: 0 6rem;
     gap: 2rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.homeCTA {
+    width: 100%;
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom right, #22c55e, #16a34a, #15803d);
+    position: relative;
+}
+
+.ctaContent {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 2rem;
+    background: var(--bgLiquidGlass);
+    backdrop-filter: blur(12px);
+    border-radius: 2rem;
+    corner-shape: squircle;
+    border: var(--brLiquidGlass);
+    padding: 3rem;
+    text-align: center;
+    color: var(--textColorTertiary);
+}
+
+.ctaCardIcon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--bgPrincipal);
+    border-radius: 2rem;
+    corner-shape: squircle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--bsQuaternary);
+}
+
+.ctaCardTitle {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    text-wrap: balance;
+}
+
+.blobGreen {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgba(134, 239, 172, 0.3);
+    border-radius: 9999px;
+    filter: blur(64px);
+    transform: translate(33.333%, 33.333%);
+}
+
+.blobYellow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 24rem;
+    height: 24rem;
+    background-color: rgba(250, 204, 21, 0.2);
+    border-radius: 9999px;
+    filter: blur(64px);
+    transform: translate(-50%, -50%);
+}
+
+.ctaCardDescription {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    max-width: 42rem;
+    margin: 0 auto 1rem;
+    color: var(--textColorQuaternary);
+}
+
+.ctaCardInfo {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: 32rem;
+    margin: 0 auto 1rem;
+}
+
+.ctaCardInfoItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.ctaCardInfoItemTitle {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+.ctaCardInfoItemText {
+    color: var(--textColorQuaternary);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.ctaCardBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ctaMoreInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.ctaMoreInfoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--bgLiquidGlass);
+    backdrop-filter: blur(4px);
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    border: var(--brLiquidGlass);
+    color: var(--textColorTertiary);
+}
+
+.ctaMoreInfoItemIcon,
+.ctaMoreInfoItemText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
 @media (width > 1366px) {
-    .homeSection1 {
+    .homeHero {
         height: 100%;
-        margin-bottom: 3rem;
     }
 }
 
 @media (width < 768px) {
-    .homeContentTitle {
+    .homeContent {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .heroTitle {
         font-size: 4rem;
     }
 
-    .homeContentSubTitle {
+    .heroSubtitle {
         width: auto;
         margin: 0 2rem;
         font-size: 18px;
     }
 
-    .homeSection1 {
+    .homeHero {
         height: 100%;
-        margin-bottom: 3rem;
     }
 
-    .homeContentBtns {
+    .heroBtns {
         flex-direction: column;
     }
 
-    .stepFastTutoContainer {
+    .stepsContent {
+        padding: 0;
+    }
+
+    .ctaCard {
+        padding: 1rem;
+    }
+
+    .ctaCardTitle {
+        font-size: 2.25rem;
+        line-height: 2rem;
+    }
+
+    .ctaCardDescription {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .ctaCardBtns {
+        flex-direction: column;
+    }
+
+    .ctaCardInfo {
+        gap: 1rem;
+        max-width: 100%;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctaCardInfoItem {
+        width: fit-content;
+    }
+
+    .ctaCardInfoItemTitle {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (width < 1024px) {
+    .stepsContent{
+        padding: 0 2rem;
+    }
+}
+
+@media (width < 820px) {
+    .stepsContent{
         padding: 0;
     }
 }
 
 @media (width > 768px) {
-    .stepFastTutoContainer {
+    .stepsContent,
+    .ctaCardInfo {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .ctaCardInfo {
+        gap: 2rem;
+    }
+
+    .ctaCardInfoItem:nth-child(2) {
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
     }
 }
