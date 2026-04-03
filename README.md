@@ -1,85 +1,156 @@
-# 🎓 IndeAccess: Sistema de Matrícula para el Colegio La Independencia
+# 🎓 EnrollPass
 
-<p align="center">
-  <img src="./client/public/Logo - IndeAccess.png" alt="Logo IndeAccess" width="100%">
-</p>
+**Plataforma de Gestión de Matrículas Educativas Digital**
 
-## ✨ Descripción del Proyecto
-
-**IndeAccess** es una innovadora aplicación web diseñada para transformar el proceso de matrícula e inscripción en instituciones educativas. Enfocada inicialmente en el **Colegio La Independencia**, este sistema digitaliza por completo el registro de estudiantes, eliminando las largas filas y la burocracia tradicional. Su objetivo es proporcionar una experiencia fluida y eficiente tanto para padres y acudientes como para el personal administrativo.
-
-La plataforma está construida con un diseño **elegante, minimalista y profesional**, priorizando la **facilidad de uso y la accesibilidad** para todos los usuarios, desde adultos mayores hasta jóvenes.
+Una solución moderna para digitalizar el proceso de matrícula escolar, eliminando el papel y optimizando tiempos.
 
 ---
 
-## 🎯 Funcionalidades Clave
+## 📖 Descripción
 
-### 👨‍👩‍👧‍👦 Para Acudientes
-- **Registro de Acudientes:** Un proceso robusto de registro que requiere la cédula de ciudadanía y otros datos personales para asegurar la autenticidad del acudiente. Un acudiente puede gestionar múltiples estudiantes.
-- **Gestión de Cupos:** Posibilidad de separar cupos o inscribir a estudiantes de manera sencilla, verificando la disponibilidad en tiempo real.
-- **Panel de Control:** Un dashboard intuitivo y seguro donde los acudientes pueden:
-    - **Añadir y Gestionar Estudiantes:** Registrar nuevos estudiantes y ver el estado de sus matrículas.
-    - **Visualización de Matrículas:** Acceder a un resumen detallado de la matrícula de cada estudiante, incluyendo los datos y documentos subidos.
-    - **Eliminación de Cupos:** Opción para anular una matrícula o un cupo reservado.
+**EnrollPass** es una aplicación web diseñada para la digitalización integral del proceso de registro de estudiantes en instituciones educativas. Inicialmente desarrollada para el Colegio La Independencia como **"IndeAccess"**, es una solución escalable y adaptable para cualquier institución educativa.
 
-### 💼 Para Administradores (Secretaría/Gestor)
-- **Acceso Exclusivo:** Un acceso seguro y semi-oculto para el personal administrativo, que requiere un código de institución único para desbloquear el formulario de inicio de sesión.
-- **Panel de Administración:** Un dashboard completo para la gestión total del sistema:
-    - **Gestión de Estudiantes y Matrículas:** Acceso a todos los perfiles de estudiantes, con la posibilidad de verificar la información, documentos y fotos de los estudiantes.
-    - **Gestión de Grupos:** Control sobre los grupos y la disponibilidad de cupos, permitiendo ajustes dinámicos.
-    - **Visualización Detallada:** Un entorno para revisar y validar cada dato ingresado por los acudientes, asegurando la integridad de la información.
+### 🦉 Enrolli - Nuestra Mascota
+
+Enrolli es un personaje amigable con gorra de graduación que guía a los usuarios a través del proceso de matrícula, haciendo la experiencia más cercana y humana.
 
 ---
 
-## 💻 Tecnologías Utilizadas
+## ❌ El Problema
 
-- **Frontend:**
-    - **React.js:** Para una interfaz de usuario dinámica, moderna y responsiva.
+Los sistemas tradicionales de matrícula presentan:
 
-- **Backend:**
-    - **PHP:** Para la lógica del servidor, la gestión de la base de datos y la autenticación robusta.
+- ⏱️ Largas filas y tiempos de espera prolongados
+- 📄 Documentos físicos propensos a pérdidas y errores
+- 😤 Procesos tediosos que generan frustración
+- 🔍 Falta de visibilidad en tiempo real
+- 🏢 Necesidad de presencia física
 
 ---
 
-## 🚀 Cómo Empezar
+## ✅ La Solución
+
+EnrollPass digitaliza completamente el proceso de matrícula:
+
+- ✨ Formularios y documentos 100% digitales
+- ⚡ Matrícula desde cualquier lugar, 24/7
+- 🎯 Validaciones automáticas de datos
+- 🎨 Interfaz intuitiva y fácil de usar
+- 🔒 Protección de datos sensibles
+
+---
+
+## 🚀 Características
+
+### Para Acudientes
+
+- ✅ Registro seguro con cédula de ciudadanía
+- 👥 Gestión de múltiples estudiantes
+- 📊 Dashboard personalizado
+- 📝 Gestión de cupos en tiempo real
+- 📎 Carga digital de documentos
+- 🔄 Anulación de solicitudes
+
+### Para Administradores
+
+- 🔐 Acceso exclusivo con código institucional
+- 👨‍💼 Panel de administración completo
+- 👁️ Revisión y validación de información
+- 📚 Gestión de grupos y cupos
+- ✏️ Edición de perfiles de estudiantes
+- 📊 Trazabilidad completa de matrículas
+
+---
+
+## 💻 Tecnologías
+
+### Frontend
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+- **React.js** - Interfaces interactivas
+- **CSS Modular** - Diseño responsivo
+- **Gravity:UI** - Sistema de iconos
+
+### Backend
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+
+- **Express.js** - API RESTful
+- **Node.js** - Servidor JavaScript
+- **MongoDB** - Base de datos NoSQL
+
+---
+
+## 🏗️ Arquitectura
+
+```
+┌─────────────┐
+│   Frontend  │  ← React.js (Interfaz de usuario)
+│  (React.js) │
+└──────┬──────┘
+       │
+       │ API REST
+       │
+┌──────▼──────┐
+│   Backend   │  ← Express.js (Lógica y APIs)
+│ (Express.js)│
+└──────┬──────┘
+       │
+       │
+┌──────▼──────┐
+│  Base de    │  ← MongoDB (Almacenamiento)
+│    Datos    │
+│  (MongoDB)  │
+└─────────────┘
+```
+
+---
+
+## 📦 Instalación
 
 ### Prerrequisitos
-- Node.js (versión 20 o superior)
-- npm
-- Un servidor web con soporte para PHP (ej. Apache, Nginx)
-- MySQL para la base de datos
 
-### Instalación
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone [https://github.com/tu-usuario/nombre-del-repositorio.git](https://github.com/tu-usuario/nombre-del-repositorio.git)
-    cd nombre-del-repositorio
-    ```
-2.  **Instalar dependencias de frontend:**
-    ```bash
-    cd frontend
-    npm install
-    ```
-3.  **Configurar el backend:**
-    -   Crea tu base de datos y configura las credenciales en el archivo de conexión de PHP.
-    -   Importa la estructura de la base de datos (schema.sql) ubicada en el directorio `./server/database/`.
+- Node.js >= 18.x
+- MongoDB >= 6.x
 
-4.  **Ejecutar la aplicación:**
-    -   Inicia tu servidor web para el backend de PHP.
-    -   Desde el directorio `frontend`, inicia el servidor de desarrollo de React:
-        ```bash
-        npm start
-        ```
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+La aplicación estará disponible en `http://localhost:5173`
 
 ---
 
-## 🤝 Colaboradores
+## 📝 Licencia
 
--   [devMaiiCol06](https://github.com/devMaiiCol06)
--   [jhoan-sys](https://github.com/jhoan-sys)
+Este proyecto está bajo la Licencia MIT.
 
 ---
 
-## 📄 Licencia
+## 👨‍💻 Desarrollador
 
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo `LICENSE`.
+**Maicol Smith Moreno Aguirre**
+
+- 📧 Email: maicolmoreno1218@gmail.com
+- 💼 LinkedIn: [devmaiicol06](https://www.linkedin.com/in/devmaiicol06/)
+- 🐙 GitHub: [@devMaiiCol06](https://github.com/devMaiiCol06)
+
+---
+  
+**EnrollPass** - Transformando la educación mediante la tecnología 🎓
+  
