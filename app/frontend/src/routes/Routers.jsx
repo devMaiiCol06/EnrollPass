@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from '../views/Home';
-import Auth from '../views/Auth';
-import GuardianPanel from '../views/GuardianPanel';
-import Guide from '../views/Guide';
-import AdminPanel from '../views/AdminPanel';
-import { BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
+import Home from "../interfaces/Home";
+import Auth from "../interfaces/Auth";
+import GuardianPanel from "../interfaces/GuardianPanel";
+import Guide from "../interfaces/Guide";
+import AdminPanel from "../interfaces/AdminPanel";
+import { BrowserRouter } from "react-router-dom";
 
 export default function Routers() {
     return (
