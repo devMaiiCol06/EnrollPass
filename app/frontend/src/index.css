@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+    font-family: "DhPafigo";
+    src: url("./assets/fonts/Dh_Pafigo_Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* HEADER */
+    --bgBtnHeaderPrincipal: #4774b8;
+    --bgBtnHeaderPrincipalHover: #3e67a4;
+    --bgBtnHeaderSecondary: #f5f5f5;
+    --bgBtnHeaderSecondaryHover: #e8edf5;
+
+    /* GLOBAL */
+    /*      Fuente */
+    --customFont: "DhPafigo", sans-serif;
+    /*      Color Fondos */
+    --bgPrincipal: #ffffff;
+    /*          Fondos Botones */
+    --bgPrincipalBtn: linear-gradient(
+        135deg,
+        #2a4b7d 0%,
+        #4774b8 50%,
+        #2a4b7d 100%
+    );
+    --bgPrincipalBtnHover: linear-gradient(
+        135deg,
+        #234270 0%,
+        #4774b8 50%,
+        #234270 100%
+    );
+    --bgSecondaryBtn: #f5f5f5;
+    --bgSecondaryBtnHover: #e8edf5;
+    /*          Fondos Gradientes */
+    --gradientSpecial: linear-gradient(
+        135deg,
+        #2a4b7d 0%,
+        #4774b8 50%,
+        #2a4b7d 100%
+    );
+    --gradientBlue: linear-gradient(135deg, #4774b8 0%, #2a4b7d 100%);
+    --gradientGold: linear-gradient(135deg, #f2c15a, #e6a800);
+    --gradientGreen: linear-gradient(135deg, #73ad6f, #5f975b);
+    --gradientBgHero: linear-gradient(
+        to bottom,
+        rgba(0, 166, 61, 0.07),
+        rgba(238, 177, 0, 0.07),
+        var(--bgPrincipal)
+    );
+    /*      Color Textos */
+    --textColorHeading: #18181f;
+    --textColorBody: #4b5563;
+    --textColorLightPrincipal: #fff;
+    --textColorLightSecondary: #dcfce7;
+    --textColorWarnHeading: #894b00;
+    --textColorWarnBody: #854d0e;
+    /*      Fondos Generales */
+    --bgLiquidGlass: rgba(255, 255, 255, 0.1);
+    --bgBadgeGreen: #dbfce7;
+    --bgBadgeBlue: #e8f0fa;
+    --bgBadgeRed: #fee2e2;
+    --bgBadgeGold: #fff8e1;
+    --bgBadgeWarn: #f8ec91;
+    --bgHr: #d4d5d6;
+    /*      Colores Globales */
+    --colorBlue: #4774b8;
+    --colorBlueHover: #3e67a4;
+    --colorLightBlue: #7c9ed0;
+    --colorLightBlueHover: #6b91cb;
+    --colorGold: #f2c15a;
+    --colorGoldHover: #e6a800;
+    --colorGreen: #73ad6f;
+    --colorGreenHover: #5f975b;
+    --colorRed: #ec8787;
+    --colorRedHover: #ec8787;
+    /*      Bordes Globales */
+    --brLiquidGlass: 1px solid rgba(255, 255, 255, 0.157);
+    --brBadgeGreen: #bbf7d0;
+    --brBadgeGold: #f1ebaa;
+    --brBadgeBlue: #bbf7d0;
+    --brBadgeRed: #ec878769;
+    --brSecondaryBtn: #e5e5e5;
+    --brInput: #d1d5dd;
+    --brInputHover: #a9d4aa;
+    /*      Sombras Globales */
+    --bsPrincipal: 0px 10px 10px 2px rgba(128, 128, 128, 0.1);
+    --bsSecondary: 0px 10px 10px 2px rgba(128, 128, 128, 0.2);
+    --bsTertiary: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    --bsQuaternary:
+        0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --bsLiquidGlass:
+        inset 0 4px 2px rgba(255, 255, 255, 0.2),
+        inset 0 0 4px 2px rgba(255, 255, 255, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+a,
+button,
+input {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body,
+html,
+.view {
+    background: var(--bgPrimary);
+    font-family: "DM Sans", sans-serif !important;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: -0.5px;
+}
+
+.specialText {
+    background: var(--gradientSpecial);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 4px 12px rgba(6, 8, 9, 0.1));
+    font-family: var(--customFont);
+}
+
+.specialLiquidGlass {
+    position: relative;
+}
+
+.specialLiquidGlass::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    corner-shape: squircle;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--brLiquidGlass);
+    box-shadow: var(--bsLiquidGlass);
+    pointer-events: none;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.specialLiquidGlass > * {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--bsPrincipal);
+    background: var(--bgPrincipal);
+}

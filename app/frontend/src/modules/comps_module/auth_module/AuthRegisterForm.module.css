@@ -1,0 +1,21 @@
+.authLoginFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+}
+
+.authFormBtnContainer {
+    margin: 1rem auto 0;
+    width: 100%;
+}
+
+.authFormNamesContainer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}

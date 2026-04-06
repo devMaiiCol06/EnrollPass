@@ -1,0 +1,351 @@
+.GuardianPanelContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.guardianPanelContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 4rem;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
+.gpWelcomeBanner,
+.gpQuickActions,
+.gpStudentsList,
+.gpAddStudent,
+.quickActionCardIcon,
+.quickActionCardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.welcomeBannerWrapper {
+    width: 100%;
+}
+
+.welcomeBanner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    background: var(--gradientBlue);
+    width: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
+    position: relative;
+    corner-shape: squircle;
+    overflow: hidden;
+    color: var(--textColorLightPrincipal);
+}
+
+/* .blobGreen {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+    height: 20rem;
+    background: rgba(130, 191, 152, 0.3);
+    border-radius: 9999px;
+    filter: blur(64px);
+    transform: translate(33.333%, 33.333%);
+}
+
+.blobYellow {
+    position: absolute;
+    width: 24rem;
+    height: 24rem;
+    top: 0;
+    left: 0;
+    background: rgba(250, 204, 21, 0.25);
+    border-radius: 9999px;
+    filter: blur(64px);
+    transform: translate(-50%, -50%);
+} */
+
+.welcomeText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.welcomeText * {
+    padding: 0;
+}
+
+.welcomeText p:first-child {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.welcomeText p:last-child {
+    line-height: 1.625;
+    font-size: 1rem;
+    max-width: 28rem;
+}
+
+.welcomeText h2 {
+    font-size: 2.3rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.welcomeStats {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.statCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border: var(--brLiquidGlass);
+    background: var(--bgLiquidGlass);
+    border-radius: 1.5rem;
+    corner-shape: squircle;
+    overflow: hidden;
+    box-shadow: var(--bsPrincipal);
+}
+
+.statCard h1 {
+    text-align: center;
+    font-weight: 600;
+}
+.statCard p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.statCard:last-child h1 {
+    color: yellow;
+}
+
+.quickActionsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+}
+
+.quickActionsTitle {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.quickActionsCards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+}
+
+.quickActionsCards > * {
+    display: block;
+    flex: 1;
+    min-width: 100px;
+    height: 100%;
+    text-decoration: none;
+}
+
+.quickActionCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    padding: 2rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    corner-shape: squircle;
+    overflow: hidden;
+    box-shadow: var(--bsPrincipal);
+    border-top-width: 4px;
+}
+
+.quickActionCardNew {
+    border-color: var(--brBadgeGreen);
+    border-top-color: var(--colorGreen);
+}
+
+.quickActionCardNew .quickActionCardIcon {
+    background: var(--colorGreen);
+}
+
+.quickActionCardNew .quickActionCardButton {
+    color: var(--colorGreen);
+}
+
+.quickActionCardRenew {
+    border-color: var(--brBadgeBlue);
+    border-top-color: var(--colorBlue);
+}
+
+.quickActionCardRenew .quickActionCardIcon {
+    background: var(--colorBlue);
+}
+
+.quickActionCardRenew .quickActionCardButton {
+    color: var(--colorBlue);
+}
+
+.quickActionCardCancel {
+    border-color: var(--brBadgeRed);
+    border-top-color: var(--colorRed);
+}
+
+.quickActionCardCancel .quickActionCardIcon {
+    background: var(--colorRed);
+}
+
+.quickActionCardCancel .quickActionCardButton {
+    color: var(--colorRed);
+}
+
+.quickActionCardHeader {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quickActionCardContent {
+    align-items: flex-start;
+}
+
+.quickActionCardIcon {
+    color: var(--textColorLightPrincipal);
+    padding: 0.8rem;
+    width: min-content;
+    height: min-content;
+    border-radius: 1.5rem;
+    corner-shape: squircle;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.quickActionCardTitle {
+    margin-bottom: 4px;
+    font-size: 18px;
+    color: var(--textColorHeading);
+}
+
+.quickActionCardDescription {
+    color: var(--textColorBody);
+    font-size: 14px;
+}
+
+.quickActionCardButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.quickActionCard:hover .quickActionCardButton {
+    gap: 1rem;
+    font-weight: 600;
+}
+
+@media (width < 930px) {
+    .quickActionCardDescription {
+        display: none;
+    }
+}
+
+@media (width < 830px) {
+    .welcomeBanner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (width < 768px) {
+    .guardianPanelContainer {
+        padding: 1.5rem;
+    }
+}
+
+@media (width < 500px) {
+    .guardianPanelContainer {
+        padding: 1rem;
+    }
+
+    .welcomeBanner {
+        padding: 1.5rem;
+    }
+
+    .welcomeText h2 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .welcomeText p:last-child {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .statCard h1 {
+        font-size: 1.5rem;
+    }
+
+    .statCard p {
+        font-size: 12px;
+    }
+
+    .quickActionCard {
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quickActionCardContent {
+        display: none;
+    }
+
+    .quickActionCardButtonIcon {
+        display: none;
+    }
+}
+
+@media (width < 400px) {
+    .statCard h1 {
+        font-size: 1rem;
+    }
+
+    .statCard p {
+        font-size: 12px;
+    }
+
+    .statCard {
+        border-radius: 1rem;
+    }
+
+    .welcomeStats {
+        gap: 0.5rem;
+    }
+}

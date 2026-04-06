@@ -1,0 +1,22 @@
+.RegularInput {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 999999999999999999rem;
+    corner-shape: squircle;
+    border: 1px solid var(--brInput);
+    color: var(--textColorQuaternary);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px;
+    background: var(--bgSecondaryBtn);
+    font-family: "DM Sans", sans-serif;
+    backdrop-filter: blur(30px);
+}
+
+.RegularInput:focus {
+    color: var(--textColorHeading);
+    border-color: var(--brInputHover);
+    outline: 1px solid var(--brInputHover);
+    box-shadow: var(--bsPrincipal);
+}

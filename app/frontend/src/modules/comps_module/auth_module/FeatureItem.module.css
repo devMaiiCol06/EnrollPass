@@ -1,0 +1,25 @@
+.featureItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.featureIcon {
+    padding: 0.5rem;
+    color: var(--colorGreen);
+    background: #4ade8021;
+    border-radius: 999999rem;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureText {
+    color: var(--textColorBody);
+    font-size: 15px;
+    font-weight: 300;
+}

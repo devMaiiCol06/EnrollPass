@@ -1,0 +1,89 @@
+.RegularBtnContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 9999999rem;
+    corner-shape: squircle;
+    cursor: pointer;
+    width: fit-content;
+    font-family: "DM Sans", sans-serif;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-align: center;
+    z-index: 10000;
+}
+
+.btnMainPrincipal,
+.btnMainSecondary {
+    padding: 14px 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.btnMainPrincipal {
+    background: var(--bgPrincipalBtn);
+    color: var(--textColorLightPrincipal);
+}
+
+.btnMainPrincipal:hover {
+    transform: scale(1.02);
+    background: var(--bgPrincipalBtnHover);
+}
+
+.btnMainSecondary {
+    background: var(--bgSecondaryBtn);
+    color: var(--textColorHeading);
+}
+
+.btnMainSecondary:hover {
+    background: var(--bgSecondaryBtnHover);
+}
+
+/* AUTH ACTION BUTTON */
+
+.btnAuthAction {
+    background: var(--bgPrincipalBtn);
+    color: var(--textColorLightPrincipal);
+    width: 100%;
+    padding: 0.7rem;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnAuthAction:hover {
+    background: var(--bgPrincipalBtnHover);
+}
+
+/* HEADER */
+
+.btnHeaderPrincipal,
+.btnHeaderSecondary,
+.btnHeaderBack {
+    padding: 0.5rem 1rem !important;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btnHeaderPrincipal {
+    background: var(--bgBtnHeaderPrincipal);
+    color: var(--textColorLightPrincipal);
+}
+
+.btnHeaderPrincipal:hover {
+    background: var(--bgBtnHeaderPrincipalHover);
+}
+
+.btnHeaderSecondary, .btnHeaderBack {
+    background: var(--bgBtnHeaderSecondary);
+    color: var(--textColorHeading);
+}
+
+.btnHeaderSecondary:hover, .btnHeaderBack:hover {
+    background: var(--bgBtnHeaderSecondaryHover);
+}
+
+.btnHeaderBack {
+    flex-direction: row-reverse;
+}
