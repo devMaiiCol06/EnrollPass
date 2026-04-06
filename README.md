@@ -25,6 +25,33 @@ Los sistemas tradicionales de matrícula presentan:
 - 😤 Procesos tediosos que generan frustración
 - 🔍 Falta de visibilidad en tiempo real
 - 🏢 Necesidad de presencia física
+# 🎓 EnrollPass
+
+**Plataforma de Gestión de Matrículas Educativas Digital**
+
+Una solución moderna para digitalizar el proceso de matrícula escolar, eliminando el papel y optimizando tiempos.
+
+---
+
+## 📖 Descripción
+
+**EnrollPass** es una aplicación web diseñada para la digitalización integral del proceso de registro de estudiantes en instituciones educativas. Inicialmente desarrollada para el Colegio La Independencia como **"IndeAccess"**, es una solución escalable y adaptable para cualquier institución educativa.
+
+### 🦉 Enrolli - Nuestra Mascota
+
+Enrolli es un personaje amigable con gorra de graduación que guía a los usuarios a través del proceso de matrícula, haciendo la experiencia más cercana y humana.
+
+---
+
+## ❌ El Problema
+
+Los sistemas tradicionales de matrícula presentan:
+
+- ⏱️ Largas filas y tiempos de espera prolongados
+- 📄 Documentos físicos propensos a pérdidas y errores
+- 😤 Procesos tediosos que generan frustración
+- 🔍 Falta de visibilidad en tiempo real
+- 🏢 Necesidad de presencia física
 
 ---
 
@@ -109,6 +136,7 @@ EnrollPass digitaliza completamente el proceso de matrícula:
 
 ---
 
+## 📦 Instalación
 ## 📦 Instalación
 
 ### Prerrequisitos
